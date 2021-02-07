@@ -616,12 +616,11 @@ footer {
             flex-direction: column;
     position: absolute;
     top: 18rem;
-    right: -800px;
+    left: -350px;
     background-color: #d2f0f0;
     -webkit-transition: all .4s;
     transition: all .4s;
     border-radius: 10px;
-    width: 100vw !important;
   }
   #menuBtn {
     display: block;

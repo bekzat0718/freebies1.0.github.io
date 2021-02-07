@@ -41,12 +41,12 @@
     var navbar = document.getElementById("navbar")
     var menu = document.getElementById("menu")
     menuBtn.onclick = function() {
-        if (navbar.style.right == "-800px") {
-            navbar.style.right = "0%";
+        if (navbar.style.left == "-350px") {
+            navbar.style.left = "0%";
             menu.src = "img/close.png" 
         }
         else {
-            navbar.style.right = "-800px";
+            navbar.style.left = "-350px";
             menu.src = "img/menu.png"
         }
     }
