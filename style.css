@@ -704,6 +704,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-right: 2rem;
   }
   .subscribe-block .subscribe-btn {
     margin-top: 2rem;
