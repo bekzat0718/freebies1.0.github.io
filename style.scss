@@ -1,0 +1,753 @@
+$main-color: #F53838;
+$title-color: #0B132A;
+$text-color: #4F5665;
+
+%title-style {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 50px;
+    color: $title-color;
+}
+
+%text-style {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 30px;
+    color: $text-color;
+}
+
+%btn-text-style {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: $main-color;
+    text-align: center;
+}
+
+%icon-text {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+%flex-box-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%flex-box-r {
+    display: flex;
+    flex-direction: column;
+}
+html {
+    overflow-x: hidden !important;
+}
+
+.container {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box !important;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+//* HEADER *//
+#menuBtn {
+    display: none;
+}
+
+.header {
+    @extend %flex-box-c;
+    margin-top: 4.5rem;
+    // .header-right {
+    //     @extend %flex-box-c;
+
+    // }
+    a:hover,
+    a:focus {
+        color: $main-color;
+    }
+
+    .navbar {
+        width: 40%;
+        @extend %flex-box-c;
+    }
+
+    .nav-link {
+        @extend %text-style;
+        color: $text-color;
+    }
+
+    .nav-active-link {
+        color: $main-color;
+    }
+
+    .sign-in-link {
+        @extend %title-style;
+        font-size: 1.6rem;
+        color: $title-color;
+        font-weight: 500;
+    }
+
+    .sign-in-btn {
+        padding: 1.3rem 4.5rem;
+        border: solid 1px $main-color;
+        border-radius: 50px;
+        margin-left: 3rem;
+        @extend %title-style;
+        font-size: 1.6rem;
+        color: $main-color;
+    }
+
+    .sign-in-btn:hover {
+        background-color: $main-color;
+        color: white;
+        transition: all .3s;
+    }
+}
+
+// * Main-Screen *//
+.main-screen {
+    @extend %flex-box-c;
+    margin-top: 8rem;
+
+    .main-screen-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .main-screen-title {
+            @extend %title-style;
+            max-width: 40rem;
+        }
+
+        .main-screen-text {
+            @extend %text-style;
+            margin-top: 2rem;
+        }
+
+        .main-screen-btn {
+            @extend %btn-text-style;
+            margin-top: 4rem;
+            padding: 1.7rem 8rem;
+            background-color: $main-color;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .main-screen-btn:hover {
+            box-shadow: 5px 25px 15px 0px #FEE1E1;
+            transition: ease .2s;
+        }
+    }
+
+    .main-screen-right {
+        margin-left: 4rem;
+    }
+}
+
+// * Features *//
+.features {
+    @extend %flex-box-c;
+    margin: 10rem 0;
+    padding: 6.7rem 9rem;
+    box-shadow: 5px 30px 30px #f6f6f6;
+
+    .feature-box {
+        @extend %flex-box-c;
+
+        .features-text {
+            margin-left: 3.6rem;
+
+            .feature-number {
+                @extend %icon-text;
+            }
+
+            .feature-description {
+                @extend %text-style;
+            }
+        }
+    }
+
+
+
+
+}
+
+// * Advantage Block 
+.advantage {
+    @extend %flex-box-c;
+    margin-bottom: 13rem;
+
+    .adv-text {
+        width: 43rem;
+
+        .adv-title {
+            @extend %title-style;
+        }
+
+        .adv-paragraph {
+            @extend %text-style;
+            margin: 2rem 0;
+        }
+
+        .adv-li-div {
+            @extend %flex-box-c;
+            margin-bottom: 2.5rem;
+            justify-content: flex-start;
+
+            .adv-li {
+                @extend %text-style;
+                list-style: none;
+                font-size: 14px;
+            }
+
+            img {
+                margin-right: 1rem;
+            }
+        }
+
+    }
+
+
+}
+
+// * OFFER/PLAN SECTION//
+.offer {
+    background: linear-gradient(#fafafa, #ffffff);
+    padding-bottom: 4rem;
+}
+
+.plan {
+    @extend %flex-box-r;
+
+    .plan-text {
+        max-width: 55.5rem;
+        margin: 7rem auto;
+
+        .plan-title {
+            @extend %title-style;
+            text-align: center;
+        }
+
+        .plan-paragraph {
+            @extend %text-style;
+            text-align: center;
+        }
+    }
+
+    .plan-options {
+        @extend %flex-box-c;
+        align-items: baseline;
+
+        .option-box {
+            @extend %flex-box-r;
+            background-color: white;
+            padding: 7rem 7.5rem 5rem;
+            border: 2px solid #DDDDDD;
+            border-radius: 10px;
+
+            .plan-name {
+                @extend %title-style;
+                font-size: 1.8rem;
+                text-align: center;
+                margin: 3rem 0 .5rem;
+            }
+
+            ul {
+                min-height: 25rem;
+            }
+
+            .plan-li-div {
+                @extend %flex-box-c;
+                justify-content: flex-start;
+                margin-top: 1rem;
+
+                .plan-li {
+                    @extend %text-style;
+                    font-size: 14px;
+                }
+
+                img {
+                    margin-right: 2rem;
+                }
+            }
+
+            .plan-cost {
+                @extend %title-style;
+                font-weight: 500;
+                font-size: 25px;
+                text-align: center;
+                margin-top: 3rem;
+
+                span {
+                    font-family: Rubik;
+                    font-weight: normal;
+                    font-size: 25px;
+                    text-align: center;
+                    color: #4F5665;
+                }
+            }
+
+            .plan-btn {
+                padding: 1.3rem 6.2rem;
+                border: 2px solid $main-color;
+                border-radius: 50px;
+                margin-top: 2rem;
+                @extend %btn-text-style
+            }
+        }
+    }
+
+    .option-box:hover {
+        border: $main-color 2px solid;
+        transition: all .2s;
+
+        .plan-btn {
+            background-color: $main-color;
+            color: white;
+            box-shadow: 5px 25px 15px 0px #FEE1E1;
+
+        }
+    }
+}
+
+// * WORLD_MAP
+.world-map {
+    @extend %flex-box-r;
+    align-items: center;
+    margin: 9rem 0;
+
+    .map-text {
+        margin-bottom: 7rem;
+        max-width: 55.5rem;
+    }
+
+    .map-title,
+    .map-paragraph {
+        text-align: center;
+    }
+
+    .map-title {
+        @extend %title-style;
+        max-width: 38.3rem;
+        margin: 2rem auto;
+    }
+
+    .map-paragraph {
+        @extend %text-style;
+    }
+}
+
+.companies {
+    @extend %flex-box-c;
+    align-items: center;
+
+    img {
+        width: 20rem;
+        height: 6rem;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 8px 8px 8px 5px #FEE1E1;
+        border: 2px solid #FEE1E1;
+    }
+
+    img:hover {
+        box-shadow: 8px 8px 15px 15px #FEE1E1;
+        transition: ease .3s;
+    }
+}
+
+// *SLider Section
+// * Slider-header
+.slider {
+    @extend %flex-box-r;
+
+    .slider-text {
+        margin: 4rem auto;
+        max-width: 55.8rem;
+
+        .slider-title {
+            @extend %title-style;
+            text-align: center;
+            max-width: 45rem;
+            margin: 2rem auto;
+        }
+
+        .slider-paragraph {
+            @extend %text-style;
+            text-align: center;
+
+        }
+    }
+}
+
+// * Slider-boxes
+.clients {
+    margin-bottom: 8rem;
+
+}
+
+.slider-carousel {
+    @extend %flex-box-c;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 4rem;
+
+    .slider-box {
+        @extend %flex-box-r;
+
+        justify-content: flex-start;
+        border: #DDDDDD solid 2px;
+        border-radius: 1rem;
+        padding: 2rem;
+        min-height: 34rem;
+        max-width: 34rem;
+
+        .slider-box-top {
+            @extend %flex-box-c;
+            align-items: center;
+            margin-bottom: 2rem;
+
+            .client {
+                @extend %flex-box-c;
+            }
+
+            .client img {
+                margin-right: 2rem;
+            }
+
+            .client-name h5 {
+                @extend %title-style;
+                line-height: 20px;
+                font-weight: normal;
+                font-size: 1.8rem;
+            }
+
+            .client-name p {
+                @extend %text-style;
+                font-size: 1.4rem;
+                line-height: 20px;
+
+            }
+
+            .review-point {
+                @extend %flex-box-c;
+            }
+
+            .review-point p {
+                @extend %text-style;
+                color: #0B132A;
+                margin-right: 1rem;
+            }
+        }
+    }
+
+
+
+    .slider-box:hover {
+        border: 2px $main-color solid;
+        box-shadow: 10px 25px 30px 20px #f1f1f5e0;
+        transition: ease-in-out .3s;
+    }
+
+    .slider-box-bottom {
+        @extend %text-style;
+        color: #0B132A;
+        min-width: 30rem;
+    }
+}
+
+// * Subscribe Section
+
+.subscribe-block {
+    padding: 4rem 6rem;
+    background-color: white;
+    box-shadow: 10px 20px 30px 10px #f5f5f5;
+    @extend %flex-box-c;
+    align-items: center;
+
+    .subscribe-text {
+        max-width: 44rem;
+    }
+
+    .subscribe-title {
+        @extend %title-style;
+        max-width: 37rem;
+    }
+
+    .subscribe-p {
+        @extend %text-style;
+    }
+
+    .subscribe-btn {
+        @extend %btn-text-style;
+        padding: 1.7rem 6rem;
+        background-color: $main-color;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .subscribe-btn:hover {
+        box-shadow: 5px 25px 15px 0px #FEE1E1;
+        transition: ease .2s;
+    }
+}
+
+//? FOOOOOOTEEEEEEEERRRRRR
+footer {
+    margin-top: 8rem;
+    background-color: #f6f6f6;
+}
+
+.footer {
+    @extend %flex-box-c;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 6rem 0;
+
+    .social-contact {
+        p {
+            @extend %text-style;
+            margin: 2rem 0;
+            max-width: 34rem;
+        }
+    }
+
+    .footer-links {
+        @extend %flex-box-c;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        .footer-links-block {
+            @extend %flex-box-r;
+            margin-left: 10rem;
+
+            p {
+                @extend %text-style;
+                font-weight: bold;
+                margin-bottom: 2rem;
+
+            }
+
+            .footer-link {
+                @extend %text-style;
+                margin-bottom: 1rem;
+            }
+
+            .footer-link:hover {
+                color: $main-color;
+            }
+
+        }
+    }
+
+
+}
+
+@media (max-width:1190px) {
+    html {
+        font-size: 8px;
+        overflow-x: hidden;
+    }
+
+    footer {
+
+        .container {
+            background-color: #f6f6f6;
+
+
+        }
+    }
+
+    .offer {
+        .container {
+            background: linear-gradient(#fafafa, #ffffff);
+
+        }
+    }
+
+    .plan-options {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        .option-box {
+            margin: 0 auto;
+            margin-top: 2rem;
+
+            .plan-cost {
+                font-size: 20px !important;
+            }
+        }
+
+    }
+
+    .slider-carousel {
+        flex-wrap: wrap;
+    }
+
+    .slider-box {
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+
+    .main-screen-right img,
+    .world-map img,
+    .adv-img img {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .companies {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        img {
+            margin: 3rem;
+        }
+    }
+
+    .option-box-img {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+
+}
+
+@media (max-width:800px) {
+    html {
+        overflow-x: hidden;
+    }
+
+    .main-screen,
+    .advantage {
+        flex-direction: column;
+        align-items: center;
+
+        .main-screen-title {
+            max-width: 100% !important;
+        }
+
+        .main-screen-right {
+            margin-top: 4rem;
+        }
+
+        .adv-text {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .adv-li-div li {
+            text-align: center;
+        } 
+    }
+
+
+    .feature-box {
+        img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .feature-number {
+            font-size: 20px !important;
+        }
+
+    }
+
+    .navbar {
+        flex-direction: column;
+        position: absolute;
+        top: 18rem;
+        right: -800px;
+        background-color: rgb(210, 240, 240);
+        transition: all .4s;
+        border-radius: 10px;
+        width: 100vw !important;
+    }
+
+    #menuBtn {
+        display: block;
+        background-color: $main-color;
+        padding: 1rem;
+        border-radius: 10%;
+        cursor: pointer;
+    }
+
+    #menuBtn img {
+        width: 24px;
+        height: 22px;
+    }
+    .footer { 
+        justify-content: center;
+        .footer-links {
+            flex-wrap: wrap;
+        }
+        .social-contact {
+            margin: 0 auto ;
+        }
+    }
+    .option-box {
+        padding: 1rem 1.5rem;
+        width: 80%;
+        ul {
+            min-height: 0 !important;
+            margin: 0 auto;
+        }
+        .option-box-img {
+            width: 30%;
+        }
+    }
+    .sign-in {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+         .sign-in-btn {
+          margin: 1rem 0;
+            padding: .5rem !important;
+         }
+    }
+    .features {
+        padding: 1rem !important;
+        flex-wrap: wrap;
+    }
+    .subscribe-block {
+        flex-direction: column;
+        .subscribe-btn {
+            margin-top: 2rem;
+        }
+    }
+}
