@@ -536,8 +536,8 @@ footer {
     margin: 0 auto;
     margin-top: 2rem;
   }
-  .plan-options .option-box .plan-cost {
-    font-size: 20px !important;
+  .plan-options .plan-cost, .plan-options .plan-cost span {
+    font-size: 15px !important;
   }
   .slider-carousel {
     -ms-flex-wrap: wrap;
@@ -565,7 +565,7 @@ footer {
     margin: 3rem;
   }
   .option-box-img {
-    width: 60%;
+    width: 40%;
     margin: 0 auto;
   }
 }
@@ -644,13 +644,14 @@ footer {
   .footer .footer-links {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-left: 0;
   }
   .footer .social-contact {
     margin: 0 auto;
   }
   .option-box {
-    padding: 1rem 1.5rem;
-    width: 80%;
+    padding: 1.5rem .8rem !important;
+    width: 90%;
   }
   .option-box ul {
     min-height: 0 !important;
@@ -671,18 +672,29 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .sign-in .sign-in-btn {
+    text-align: center;
     margin: 1rem 0;
+    border-radius: 10px;
     padding: .5rem !important;
+  }
+  .sign-in .sign-in-link {
+    margin-right: 1rem;
   }
   .features {
     padding: 1rem !important;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .features .feature-box {
+    margin: 2rem auto;
+  }
+  .features .feature-box .features-text {
+    margin-left: 1rem;
   }
   .subscribe-block {
     -webkit-box-orient: vertical;
@@ -692,6 +704,9 @@ footer {
   }
   .subscribe-block .subscribe-btn {
     margin-top: 2rem;
+  }
+  .plan-btn {
+    padding: .8rem !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
