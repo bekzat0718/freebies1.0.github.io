@@ -717,7 +717,10 @@ footer {
         justify-content: center;
         .footer-links {
             flex-wrap: wrap;
-            margin-left: 0;
+        }
+        .footer-links-block {
+            margin-left: 0 !important;
+            margin-right: 3rem;
         }
         .social-contact {
             margin: 0 auto ;

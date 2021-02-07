@@ -644,7 +644,10 @@ footer {
   .footer .footer-links {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-left: 0;
+  }
+  .footer .footer-links-block {
+    margin-left: 0 !important;
+    margin-right: 3rem;
   }
   .footer .social-contact {
     margin: 0 auto;
