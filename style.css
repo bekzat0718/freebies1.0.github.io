@@ -572,7 +572,7 @@ footer {
 
 @media (max-width: 800px) {
   html {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
   .main-screen,
   .advantage {
@@ -629,6 +629,9 @@ footer {
     padding: 1rem;
     border-radius: 10%;
     cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-top: 1rem;
   }
   #menuBtn img {
     width: 24px;
@@ -658,6 +661,7 @@ footer {
     width: 30%;
   }
   .sign-in {
+    width: 25rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
