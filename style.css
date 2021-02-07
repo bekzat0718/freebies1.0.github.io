@@ -621,6 +621,7 @@ footer {
     -webkit-transition: all .4s;
     transition: all .4s;
     border-radius: 10px;
+    width: 100vw !important;
   }
   #menuBtn {
     display: block;
